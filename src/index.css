@@ -1,0 +1,780 @@
+/* @import url('https://fonts.cdnfonts.com/css/poppins'); */
+/* @import url('https://fonts.cdnfonts.com/css/montserrat'); */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* max-width: 1000px; */
+  overflow-x: hidden;
+
+}
+
+:root {
+  --primary-color: #FC5A00;
+  --secondary-color: #444444;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --paragraph-font-family: 'Poppins', sans-serif;
+  --headings-font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headings-font-family);
+}
+
+
+/* Root layout */
+
+/* navbar */
+header {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+header nav .logo {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-item {
+  margin: 0 30px;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.nav-link [icon]:hover,
+.nav-link p:hover {
+  color: #FC5A00;
+}
+
+.nav-link p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 8px;
+}
+
+.btn {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #FC5A00;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.btn.sign-up {
+  background-color: #FFFFFF;
+  color: #FC5A00;
+}
+
+.btn.login {
+  color: #FFFFFF;
+  background-color: #FC5A00;
+}
+
+.footer {
+  height: 150px;
+  background: #F4F4F4;
+}
+
+.footer-links,
+.footer-navlinks,
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+
+.footer-links h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  color: var(--primary-color);
+}
+
+.footer-navlinks,
+.footer-socials {
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--secondary-color);
+  list-style: none;
+
+}
+
+.footer-navlinks a,
+.footer-socials a {
+  color: var(--secondary-color);
+}
+
+.footer-navlinks li,
+.footer-socials li {
+  margin: 0 10px;
+}
+
+.footer .copyright {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  /* identical to box height, or 24px */
+
+
+  color: #444444;
+
+}
+
+.copyright p {
+  margin: 10px 50px
+}
+
+
+
+
+
+/* page content */
+
+/* Home Page*/
+
+.landing-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 70px auto 0 auto;
+  padding: 0 150px;
+
+}
+
+.landing-page-image {
+  width: 500px;
+  height: 520px;
+  background-image: url('./assets/bg-circle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  overflow: hidden;
+}
+
+.landing-page-image img {
+  width: 93%;
+  margin-top: 15px;
+
+}
+
+.landing-page-text {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.landing-page-text h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #FC5A00;
+  line-height: 69px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #FC5A00;
+  border-radius: 44px;
+  height: 55px;
+  width: 460px;
+  padding: 0 20px;
+  margin: 50px auto;
+
+}
+
+.search-icon {
+  background: #CCCCCC;
+}
+
+.search input {
+  width: 500px;
+  border: 0;
+  text-indent: 5px;
+  outline: none !important;
+}
+
+.search input:active {
+  border: none !important;
+  outline: none !important;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid white;
+  outline: none !important;
+}
+
+
+
+.search button {
+  position: absolute;
+  width: 145px;
+  height: 53px;
+  right: 0px;
+  top: 0;
+  background: #FC5A00;
+  color: #FFFFFF;
+  border-radius: 0px 44px 44px 50px;
+  /* border-width: 5px; */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.search button:hover {
+  background-color: #fff;
+  color: #FC5A00;
+}
+
+.form-control {
+  transition: none;
+}
+
+
+.ads-carousel {
+  padding: 5px 100px;
+  /* height: auto; */
+  background: linear-gradient(90.17deg, #FC5A00 38.34%, #FFA81B 80.8%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.ads-title {
+  width: 350px;
+  height: 230px;
+  background: linear-gradient(rgb(252 88 0 / 70%), rgb(252 88 0 / 70%)), url('./assets/circle.png');
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.ads-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.ads-text p {
+  width: 300px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+.ads-text .btn {
+  width: 130px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 96%;
+  text-align: center;
+  color: #FC5A00;
+  margin: 30px 0 0 0;
+}
+
+.ads-image {
+  text-align: center;
+}
+
+.ads-image img {
+  width: 92%;
+}
+
+.product-and-services-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px;
+}
+
+.categories {
+  width: 220px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.08);
+  border-radius: 9px;
+  font-family: var(--paragraph-font-family);
+  /* margin: 50px ; */
+  padding: 0 30px;
+}
+
+.categories ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px auto;
+}
+
+.categories ul p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.categories ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  margin: 5px 0;
+
+}
+
+.product-and-service-display {
+  width: 90%;
+  padding: 0 29px;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #80808013; */
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+  font-family: var(--headings-font-family);
+  font-weight: 700;
+  font-size: 24px;
+
+  color: #FC5A00;
+}
+
+
+
+.active-tabs {
+
+  border-bottom: 4px solid #FC5A00;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 4px;
+  background: #5893f1;
+}
+
+.content {
+  border-top: 1px solid #C2C2C2;
+  display: none;
+  padding: 10px;
+
+}
+
+.active-content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.col-2 {
+  flex: 0 0 30.666667%;
+  max-width: 20%;
+}
+
+.sorting {
+  float: right;
+  padding: 10px 5px;
+  /* width: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+  float: right;
+  font-weight: 400;
+  font-size: 20px;
+  background: #d9d9d998;
+  border-radius: 4px;
+  border: none;
+  color: #000000;
+}
+
+.sorting select {
+  border: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  margin: 0 -50px 0 0;
+}
+
+.product-card {
+  /* width: 250px; */
+  background: rgba(217, 217, 217, 0.23);
+  border-radius: 8px;
+}
+
+.product-card .card-body,
+.service-card .card-body {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.product-card .card-text .title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+  color: #000000;
+}
+
+.product-card .card-text span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #FC5A00;
+  margin: 0 10px;
+}
+
+.product-card .card-text .availability,
+.product-card .card-text .store,
+.service-card .card-text .store {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card-cart {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #FC5A00;
+}
+
+.service-card {
+  /* width: 300px; */
+  border-radius: 8px;
+  background: #F6F6F6;
+}
+
+.service-card .title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.service-card .btn {
+  float: ri;
+  height: 23px;
+  width: 80px;
+  border-radius: 3px;
+  border: 1px solid #FC5A00;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FC5A00;
+}
+
+.content-container:nth-child(1) .content {
+  border: none !important;
+}
+
+
+
+/* Sell Page */
+
+.sell-intro-text h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 90px;
+  /* or 92px */
+
+
+  color: #FC5A00
+}
+
+.sell-intro-text p {
+  text-align: justify;
+  width: 700px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 174.9%;
+  /* or 37px */
+
+
+  color: #2D2D2E
+}
+
+.sell-intro-text .btn {
+  width: 261px;
+  height: 55px;
+  background: #FC5A00;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+.why-sell hr {
+  /* width: 500px; */
+  height: 500px;
+  transform: rotate(180deg);
+  margin: 0 30px 0 0;
+  border-right: 2px solid #717171;
+  background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
+
+}
+
+
+
+
+.why-sell h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: normal;
+  /* identical to box height */
+  text-align: center;
+  margin: 50px 0;
+
+
+  color: #FC5A00;
+}
+
+.why-sell-reasons h4 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  margin: 50px 0 20px 0;
+
+
+  color: #000000;
+}
+
+.why-sell-reasons p {
+  width: 323px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 184%;
+  /* or 26px */
+
+
+  color: #000000;
+}
+
+.sell-btn .btn {
+
+  width: 250px;
+  height: 60px;
+  background: #FC5A00;
+  border-radius: 88px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 184%;
+  /* or 44px */
+
+
+  color: #FFFFFF;
+}
+
+/* Account Page */
+/* Cart Page */
+/* SignUp Page */
+.sign-up-page {
+  background-image: url('./assets/bg-circle.png');
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 110% 130%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.login-link p,
+.form p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 0 !important;
+}
+
+.login-link .btn {
+  width: 160px;
+  height: 45px;
+
+  border: 1.3px solid #FC5A00;
+  border-radius: 55px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FC5A00;
+}
+
+.sign-up-page .form h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.sign-up-page input {
+  display: block;
+  min-width: 50%;
+  margin: 3em 1em;
+  padding: 1em;
+  width: 35em;
+  border-radius: 8px;
+  border-style: none;
+  border: 1px solid #444444;
+  transition: 0.1s ease;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #444444;
+}
+
+.sign-up-page input:hover {
+  border-color: #FC5A00;
+}
+
+.sign-up-page form button {
+  width: 210px;
+  height: 60px;
+  color: #FFFFFF;
+
+  background: #FC5A00;
+  border-radius: 55px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  border: none;
+}
+
+.sign-up-page form button:hover {
+  background-color: #ffffff;
+  color: #FC5A00;
+  border: 2px solid #FC5A00;
+}
+
+.sign-up-page form p{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #444444;
+}
+
+/* Login Page */
